@@ -1,0 +1,123 @@
+﻿html, * {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+.clear {
+    display: block;
+    clear:both;
+}
+body {
+	background-color:#dfe8ee;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#0a2d44;
+        margin: 0;
+        padding: 0;
+}
+a {
+    color:#ea3d85
+}
+#canvas {
+	margin:0 auto;
+	width:900px;
+	height:570px;
+}
+#canvas #header {
+	width:800px;
+	margin:0px auto;
+}
+#canvas #corpo {
+	margin-bottom:10px;
+	clear:both;
+	text-align:center;
+}
+#about {
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+}
+.botao {
+	margin:10px;
+}
+form input {
+    padding: 5px;
+    font-size: medium;
+    margin-bottom: 5px;
+}
+form button {
+    font-size:medium;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+#resultado {
+    font-size:40px;
+    font-weight: bold;
+    text-transform:uppercase;
+    padding: 5px;
+}
+#tweet {
+    position: relative;
+    padding: 5px;
+    border: 1px white solid;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 
+#tweet a {
+    text-decoration: none;
+    display: inline;
+}
+ 
+a.voltar {
+    margin-top: 10px;
+    text-decoration: none;
+}
+ 
+a.voltar span {
+    display: block;
+    padding: 12px 10px;
+    width: 155px;
+    height: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+    text-decoration:none;
+    background-image:url("../images/button2.png");
+    font-size:16px;
+    margin: auto;
+}
+ 
+#ranking ol li a {
+    color: white;
+    text-decoration: none;
+}
+ 
+#home_tweet {
+    background-color: white;
+    height: 60px;
+    width: 600px;
+    margin: auto;
+    padding: 3px;
+}
+ 
+#home_tweet a {
+    text-decoration: none;
+}
+ 
+#home_tweet div.avatar {
+    float: left;
+    padding: 5px 5px 0 5px;
+}
+ 
+#home_tweet .texto {
+    text-align: left;
+}
+ 
+#home_tweet .texto span {
+    font-size: small;
+}

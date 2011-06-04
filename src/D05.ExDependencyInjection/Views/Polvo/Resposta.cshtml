@@ -1,0 +1,12 @@
+﻿@model dynamic
+
+<div id="resultado">@ViewBag.Resposta</div>
+<div id="tweet">
+    <div class="texto">@ViewBag.Mensagem</div>
+    <span class="clear"></span>
+    <a href="http://twitter.com/share?url=http://pergunteaopolvo.com.br&text=@(Url.Encode(ViewBag.Mensagem))&related=brunobarreto&lang=pt" 
+        onclick="javascript:window.open(this.href,'send2twitter','width=550,height=400,status=true,scrollbars=auto');return false;">
+        <span>enviar para o twitter</span>
+    </a>
+</div>
+<p><a class="voltar" href="@Url.Action("Pergunta")"><span>Nova pergunta</span></a></p> <br /><br />

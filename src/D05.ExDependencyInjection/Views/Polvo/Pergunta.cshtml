@@ -1,0 +1,25 @@
+﻿@model D05.ExDependencyInjection.Models.Pergunta
+
+<div id="about">
+	@if (ViewData.ModelState.IsValid)
+	{
+		<text>Pergunte ao polvo!</text>
+	}
+	else
+	{
+		@Html.ValidationSummary(false);
+	}
+</div>
+
+@using (Html.BeginForm()) {
+ 	<p style="margin-top:15px;">
+		@Html.TextBoxFor(m => m.Opcao1) OU 
+		@Html.TextBoxFor(m => m.Opcao2) <br/> 
+		<input type="submit" value="Perguntar" />
+	</p> 
+}
+
+<br />
+<p>Criado por <a href="http://twitter.com/brunobarreto">@@brunobarreto</a> (em PHP, ugh!)
+com design de <a href="http://twitter.com/fabiobueno">@@fabiobueno</a> <br />
+e feito como deve ser (ASP .NET MVC) por <a href="http://twitter.com/augustoproiete">@@augustoproiete</a></p>

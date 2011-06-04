@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+	string texto = "Boa tarde";
+	DateTime dataHora = DateTime.Now;
+}
+
+@Html.Partial("_MeuControlo")
+
+<h2>@ViewBag.Message</h2>
+<h2>@ViewData["OutraMensagem"]</h2>
+
+<h2>@texto.</h2>
+
+<ul>
+@for (int i = 1; i <= 5; i++)
+{
+	<li>Item @i</li>
+}
+</ul>
+
+@for (int i = 1; i <= 3; i++)
+{
+	@:Número: @i
+}
+
+<br />
+
+@for (int i = 1; i <= 3; i++)
+{
+	<text>O número é 
+	este: @i</text>
+}
+
+<h2>Meu e-mail é augusto@netponto.org</h2>
+<h2>@ViewBag.PrimeiroNome@@mswebday.com</h2>
+<h2>http://blog.@(ViewBag.PrimeiroNome).com</h2>
+
+<h2>@MvcHtmlString.Create(ViewBag.Texto)</h2>
+
+@if (dataHora.Day == 14)
+{
+	<h1>WebDay!</h1>
+}
+else
+{
+	<h1>Outra coisa</h1>
+}
+
+
+@section TituloDaPagina
+{
+    <h1>Inicio da Pagina</h1>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

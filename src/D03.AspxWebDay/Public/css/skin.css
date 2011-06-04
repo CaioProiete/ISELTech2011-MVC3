@@ -1,0 +1,257 @@
+/**********************************************************************************************************************************/
+/*							WEBDAY 2010 CSS . Copyright by BIND . www.bind.pt . All rights reserved.								*/
+/**********************************************************************************************************************************/
+
+body, html							{ height:100%; }
+
+body								{ margin: 0; padding:0; position: relative; font-size:12px; background: #e7e7df url(../images/page.bg.gif) repeat left top; }
+body #Form							{ margin: 0; padding:0; height:100%; }
+table, tr, td,
+p, div, ul, li						{ font-family: arial; font-size: 14px; font-weight: normal; color: #2c2c28; line-height: 140%; }
+p									{ display: block; margin:0; padding: 0 0 15px 0; }
+
+ul									{ padding-left:30px; }
+ol li								{ list-style: decimal; }
+li									{ margin: 5px 0; }
+
+img									{ border:0; }
+
+/*========================================================*/
+/*  2. Design Elements                                    */
+/*========================================================*/
+
+#Wrapper							{ min-height:100%; position:relative; }
+.PageWidth							{ width:960px; margin:0 auto; text-align:left; position:relative; }
+
+/*EVENT REGISTRATION*/
+
+form .tickets tfoot input 	{	background:none repeat scroll 0 0 #D5D5CE; border:1px solid #7E7E6A; color:#D4134E; font-size:24px; font-weight:bold; margin:0; padding:5px; text-transform:uppercase;}
+form .tickets th 			{ 	background: none repeat scroll 0 0 #D5D5CE; border:medium none; color:#000000; font-family:Helvetica,Arial,sans-serif; font-size:115%; font-weight:700; line-height:130%; margin-bottom:5px; margin-top:0; border-bottom:1px solid #7E7E6A;
+padding:5px 20px 5px 15px; }
+form .tickets 			{	width:100%;margin-top:25px;}
+form .tickets .description { background-color:#D5D5CE; color:#D4134E; font-size:10px; margin:5px; padding:3px; }
+
+
+#event_Register a			{ background-image:url(../images/registe-se.off.png); display:block; width:308px; height:53px; }
+#event_Register a:hover		{ cursor:pointer; background:url(../images/registe-se.on.png);}
+
+#SocialBanner { position:absolute; top:5px; right:0px; }
+#SocialBanner a:hover { background:transparent; }
+
+.admin_Main							{ background:transparent url(../images/header.bg.png) no-repeat 300px top; padding-top:165px; padding-bottom:120px; }
+#admin_Logo							{ float:left; background:url(../images/logo.png) no-repeat; margin-top:30px; }
+#admin_Logo a						{ border:none; background-color:transparent; }
+#admin_Logo a span					{ display:block; width:216px; height:92px; }
+#admin_Header						{ height:70px; width:100%; position:absolute; top:0; text-align:center; }
+#admin_Header .PageWidth			{ height:70px; }
+#admin_Nav							{ border-bottom:1px #7e7e6a solid; border-top:1px #7e7e6a solid; display:block; height:30px; }
+#admin_NavAux						{ display:none; float:right; margin: 12px 0 0 0; width:400px; position:relative; }
+#admin_NavAux div					{ margin-left: 0; float:right; }
+
+#Login								{ }
+#Login:hover						{ }
+#Login a:hover						{ cursor:pointer; }
+#Login a span						{ display:block; width:40px; height:17px; }
+#Logout								{ background:url(../images/btn.logout.off.gif) no-repeat; }
+#Logout:hover						{ background:url(../images/btn.logout.on.gif) no-repeat; }
+#Logout a:hover						{ cursor:pointer; }
+#Logout a span						{ display:block; width:45px; height:17px; }
+
+#Register						{ display:none; background:url(../images/register.btn.off.png) no-repeat; }
+#Register:hover						{ background:url(../images/register.btn.on.png) no-repeat; }
+#Register a:hover					{ cursor:pointer; }
+#Register a span					{ display:block; width:155px; height:30px; }
+#Profile							{ background:url(../images/profile.btn.off.png) no-repeat; }
+#Profile:hover						{ background:url(../images/profile.btn.on.png) no-repeat; }
+#Profile a:hover					{ cursor:pointer; }
+#Profile a span						{ display:block; width:155px; height:30px; }
+
+#ContentArea						{ margin:0; padding:0 0 50px; width:960px; }
+#Footer								{ width:100%; position:absolute; bottom:0; height:120px; background:#343434; text-align:center; }
+#Footer .PageWidth					{ padding-top:15px; }
+#Footer #Partners					{ float:left; margin-right:15px; padding-right:15px; border-right: 1px solid #585858; }
+#Footer #Logos						{ float:left; width:730px; }
+#Footer .logo						{ float:left; margin-right:25px; }
+#Footer .copyright					{ clear:both; color:#aaa; font-size:10px; padding-top:20px; text-align: center;}
+
+/*HOMEPAGE*/
+h1.home								{ background:transparent; font-size: 50px; }
+h2.home								{ font-size: 30px; }
+p.home								{ font-family:Georgia; font-size:16px; color:#fff; font-style:italic; }
+
+/*LINEUP*/
+#Lineup								{ }
+#Lineup .Session					{ border-bottom: 1px #7e7e6a solid; clear:both; padding: 10px 0 0; margin:0; overflow:hidden; }
+#Lineup .Track						{ float:left; margin-right:20px; width:80px; display:none; }
+#Lineup .SessionTitle				{ font-size:20px; line-height:110%; margin-bottom:3px; }
+#Lineup .SessionTitle a:link,
+#Lineup .SessionTitle a:visited,
+#Lineup .SessionTitle a:active		{ color:#4a4a44 !important; font-family:Arial; font-weight:bold; letter-spacing:-1px; }
+#Lineup .SessionTitle a:hover		{ color:#ffffff !important; }
+#Lineup .SpeakerName			{  border-right:1px #7e7e6a solid; color:#7e7e6a; display: inline; letter-spacing:-0.02em; font-size:14px; padding:0 5px 0 0 }
+#Lineup .SpeakerName a			{ color:#7e7e6a; }
+#Lineup .SpeakerName a:hover		{ color:#4a4a44; background:transparent; }
+#Lineup .Day				{ display:none; }
+#Lineup .Hour				{ color:#4a4a44; font-family:Arial; font-weight:bold; letter-spacing:-1px; display:inline-block; float:right; font-size:20px; text-align:center; }
+#Lineup .Room			        { color:#7e7e6a;  display: inline-block; font-size:12px; padding-right:10px; padding-left:10px; text-transform: uppercase; }
+#Lineup .Duration					{ color:#7e7e6a; font-family:Arial; font-weight:bold; letter-spacing:-1px; display:inline-block; float:right; font-size:16px; margin-right:10px; text-align:center; }
+	
+#TrackSessionsFilter				{ display:none; }
+#TrackSessionsFilter .track			{ display:block; }
+#TrackSessionsFilter .track a img	{ width: 40px; }
+
+/*SESSION DETAILS*/
+#SessionDetails						{ padding-top:20px; }
+#SessionDetails #SpeakerPhotoColumn	{ display:none; }
+#SessionDetails .SessionTitle		{ border:none; margin:0; width:auto; }
+#SessionDetails .SpeakerName		{ border-bottom: 1px #7e7e6a solid; color:#4a4a44; font-size:30px; letter-spacing:-0.02em; padding-bottom:5px; margin-bottom:10px; }
+#SessionDetails .SpeakerName a		{ color:#4a4a44 !important; }
+#SessionDetails .Track				{ display:none; }
+#SessionDetails .Room				{ color:#7e7e6a; float:right; font-size:18px; font-weight:bold; margin-top:-40px; margin-right:50px; padding-right:10px; text-transform:uppercase; }
+#SessionDetails .Day				{ display:none; }
+#SessionDetails .Hour				{ color:#4a4a44; float:right; font-size:18px; font-weight:bold; margin-top:-40px; }
+
+#SessionDetails p					{ font-size:14px; }
+#SessionDetails a.twit				{ background: transparent url(../images/ico.twit.gif) no-repeat scroll left center; color:#d2981e; display:block; margin-top:5px; padding:3px 0 3px 32px; }
+#SessionDetails a.blog				{ background: transparent url(../images/ico.blog.gif) no-repeat scroll left center; color:#d2981e; display:block; margin-top:5px; padding:3px 0 3px 32px; }
+
+
+/*LIST OF SPEAKERS*/
+#SpeakersList						{ }
+#SpeakersList .Speaker				{ border-bottom: 1px #7e7e6a solid; padding: 10px 0; margin:0 20px 0 0; overflow:hidden; float:left; width:460px; }
+#SpeakersList .Photo				{ border:5px #eee solid; float:left; margin-right:20px; width:80px; height:80px; overflow:hidden; }
+#SpeakersList img.Photo				{ border:none; height:auto; }
+#SpeakersList .SpeakerName			{ margin-bottom:0; }
+#SpeakersList .SpeakerName a:link,
+#SpeakersList .SpeakerName a:visited,
+#SpeakersList .SpeakerName a:active	{ color:#4a4a44 !important; font-family:Arial; font-weight:bold; letter-spacing:-1px; }
+#SpeakersList .SpeakerName a:hover	{ color:#ffffff !important; }
+#SpeakersList .SpeakerTitle			{ color:#7e7e6a; letter-spacing:-0.02em; font-size:12px; text-transform:uppercase; }
+#SpeakersList .SpeakerTitle a		{ color:#7e7e6a; }
+#RightCol							{ clear:both; }
+
+/*SPEAKER DETAILS*/
+#SpeakerDetails						{ padding-top:20px; }
+#SpeakerDetails #SpeakerPhotoColumn	{ background:#eee; float:right; margin: 60px 0 0 15px; padding:10px; width:190px; }
+#SpeakerDetails .Name				{ border-bottom:none; margin:0; width:auto; }
+#SpeakerDetails .SpeakerTitle		{ border-bottom: 1px #7e7e6a solid; color:#4a4a44; font-size:30px; letter-spacing:-0.02em; padding-bottom:5px; margin-bottom:10px; margin-right:230px; }
+#SpeakerDetails p					{ font-size:14px; }
+#SpeakerDetails a.twit				{ background: transparent url(../images/ico.twit.gif) no-repeat scroll left center; display:block; margin-top:5px; padding:3px 0 3px 32px; }
+#SpeakerDetails a.blog				{ background: transparent url(../images/ico.blog.gif) no-repeat scroll left center; display:block; margin-top:5px; padding:3px 0 3px 32px; }
+#SpeakerDetails a.twit:hover,
+#SpeakerDetails a.blog:hover		{ color:#4a4a44; }
+
+.session_title						{ display:block; }
+.session_title a					{ color:#4a4a44 !important; font-weight:bold; }
+.session_title a:hover				{ background:transparent; text-decoration:underline; }
+.session_title + a,
+.session_title + a + a,
+.session_title + a + a + a			{ color:#7e7e6a !important; }
+.session_title + a:hover,
+.session_title + a + a:hover,
+.session_title + a + a + a:hover	{ background:transparent; text-decoration:underline; }
+
+/*AGENDA*/
+#ScheduleNavDays {display:none;}
+#Agenda {}
+#Agenda td { border-bottom: 1px solid #7E7E6A; padding:5px 15px }
+#Agenda th { background: #D5D5CE; border-bottom: 1px solid #7E7E6A; color: #000; font-size: 115%; font-weight: 700; padding:5px; }
+#Agenda .Time { color:#7E7E6A; font-weight:bold; background-color: transparent; }
+#Agenda .Break { background: #D5D5CE; border-bottom:1px solid #9C9C92; text-align: center }
+#Agenda .Session { background: #F3F3EC; border-bottom: 1px solid #9C9C92; font-weight: bold }
+
+
+.NewsList		{ border-bottom:1px solid #7E7E6A; padding-bottom:8px; margin-bottom:8px; }
+.NewsTitle		{ color:#D4134E; font-size:18px; margin-bottom:5px; }
+.NewsDate		{ font-size:12px; }
+.NewsSummary		{ }
+.NewsMore		{ }
+.SpeakersHomeList		{ }
+.SpeakersHomeList .Speaker	{ background:#dfe0d6; float:left; height:160px; margin-right:10px; padding:5px; width:130px; }
+.SpeakersHomeList .Photo	{ display:inline-block; height:130px; overflow:hidden; width:130px; }
+.SpeakersHomeList img.Photo	{ border:none; height:auto; }
+.SpeakersHomeList .SpeakerName	{ font-size:14px; margin-top:5px; }
+
+.OverviewCell { background: #d5d5ce; width: 25%; }
+.OverviewSep { border: none; padding: 1px; width: 1px; }
+
+div,p								{ margin-top:0 }/*clear top margin for mozilla*/
+.left								{ float: left; }
+.right								{ float: right; }
+.clear								{ clear: both; }
+.dummy								{ display: none; }
+
+table	{ border-collapse:collapse; }
+th		{ background:#5d5d56; padding:5px 10px; color:#e7e7df; }
+td		{ border-bottom:1px #7e7e6a solid; padding: 5px 20px 5px 15px; }
+
+
+/*========================================================*/
+/*  5. Text                                               */
+/*========================================================*/
+
+/* Headings */
+h1									{ border-bottom:1px #7e7e6a solid; font-family: arial black; font-size: 50px; line-height: 110%; color:#d4134e; margin-top:10px; margin-bottom: 10px; letter-spacing:-4px; text-transform:uppercase; vertical-align: top; }
+h2									{ font-family: arial; 	font-size: 24px; font-weight: 900; line-height: 130%; color:#4a4a44; border: none; margin-top:0; letter-spacing:-1px; }
+h3									{ font-family: arial;	font-size: 12px; font-weight: 900; line-height: 130%; color:#7e7e6a; border: none; margin-top:0; text-transform:uppercase; }
+h4									{ font-family: Helvetica, Arial, sans-serif;	font-size: 15px; font-weight: 700; line-height: 130%; color: #D4134E; border: none; margin-top:0; margin-bottom:5px; }
+h5									{ font-family: Helvetica, Arial, sans-serif;	font-size: 115%; font-weight: 700; line-height: 130%; color: #000000; border: none; margin-top:0; margin-bottom:5px; }
+h6									{ font-family: Georgia, Times, Serif;			font-size: 115%; font-weight: 700; line-height: 130%; color: #000000; border: none; margin-top:0; margin-bottom:5px; font-style:italic; }
+
+blockquote							{ color:#777; font-family: Georgia, Times, Serif; font-size:100%; font-style:italic; }
+hr									{ background:#7E7E6A; border:none; clear:both; height:1px; }
+
+/*========================================================*/
+/*  6. Links                                        	  */
+/*========================================================*/
+
+a:active,
+a:visited,
+a:link 								{ background:transparent; color:#d4134e; text-decoration: none; }
+a:hover								{ background:#d4134e; color:#ffffff; text-decoration:none; }
+
+/*========================================================*/
+/*  7. Forms                                              */
+/*========================================================*/
+
+fieldset							{ background:#f7f7f7; border:1px #dcdcdc solid; padding:0px 9px 11px; }
+legend								{ font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #247bb3; text-transform:uppercase; }
+form dl								{ background:transparent; border:none; clear:both; color:#000 !important; padding:5px 0 0; }
+form dl dt							{ float:left; width:150px; padding: 12px 0 0; position:relative; text-align:left; color:#000; clear:both; font-family:Helvetica, Arial, sans-serif; font-size:14px; font-weight:500; }
+form dl dd							{ float:left; width:400px; padding: 0; position:relative; text-align:left; }
+form span.input,
+form span.checkbox,
+form span.textarea					{ background:#eaeaea none repeat scroll 0 0; display:inline-block; margin:0 3px 8px 0; padding:5px; }
+form input.text						{ font-size:19px; font-weight:bold; letter-spacing:-0.5px; width:380px; }
+form input.checkbox					{ margin: 8px 8px 8px 0; }
+form select.dropdown				{ font-size:15px; font-weight:bold; }
+form input.button					{ background:#247BB3; border: 2px #154A6C solid; color:#fff; font-size:18px; padding:7px; }
+
+input, select, textarea				{ border:1px #ccc solid; color:#000; margin:0; padding:5px; }
+
+.StandardButton						{ background:#247BB3; border: 2px #154A6C solid; color:#fff; font-size:18px; padding:7px; }
+.NormalTextBox						{ color: #666; background: #FFF; border: solid 1px #EBE4DD; padding-left: 4px; line-height: 12px; font-weight: normal; }
+td.NormalTextBox, span.NormalTextBox{ padding: 0; margin: 0; background: transparent; border: 0; }
+
+/* Label formatting in DNN admin forms */
+.SubHead label span					{ font-family: Helvetica, Arial, sans-serif; font-size:14px; font-weight:500; }
+
+/*========================================================*/
+/*  8. Main Menu					                      */
+/*========================================================*/
+
+#Sidebar                            { float: right; width: 257px; }
+
+/* menu styles */
+#jsddm		{ margin:0 0 0 0px; padding:0; }
+#jsddm li	{ display:inline-block; float:left; margin:0; padding:0; }
+#jsddm li a	{ color:#5D5D56; display:block; font-family:Arial Black; font-style:normal !important; font-size:30px; letter-spacing:-3px; line-height:30px; margin-right:12px; padding-right:3px; text-transform:uppercase; }
+#jsddm li a:hover	{ background:transparent; color:#4a4a44; text-decoration:none; }
+#jsddm li a.registo	{ margin-left:120px; }
+#jsddm li.selected a	{ color:#d4134e; }
+#jsddm li ul		{ margin:0; padding:5px; position:absolute; visibility: hidden; width:200px; background:#DFE0D6; border-right:#c9c9c9 1px solid; border-bottom:#c9c9c9 1px solid; border-left:#c9c9c9 1px solid; }
+#jsddm li ul li		{ float:none !important; display:block; height:30px; border-bottom: 1px #eaeaea solid; }
+#jsddm li ul li:hover	{ border-top: none; border-right: none; border-left: none; }
+#jsddm li ul li a	{ width: auto; margin:0px; color:#888 !important; font-size:25px;}
+#jsddm li ul li a:hover	{ background:#ffffcc; color:#000; text-decoration:none; }
+

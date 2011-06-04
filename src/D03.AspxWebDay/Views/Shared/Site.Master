@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-US" lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="<%= Url.Content("~/Public/css/rfnet.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%= Url.Content("~/Public/css/skin.css") %>" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" href="<%= Url.Content("~/Public/css/ie7.css") %>" >
+    <![endif]-->
+    <div id="Wrapper">
+        <div id="Master01" class="PageWidth admin_Main">
+            <div id="admin_Nav">
+                <ul id="jsddm">
+                    <li class="selected"><%= Html.ActionLink("Home", "Index", "Home") %></li>
+                    <li><%= Html.ActionLink("Evento", "Index", "Evento") %></li>
+                    <li><%= Html.ActionLink("Sessões", "Sessoes", "Evento") %></li>
+                    <li><%= Html.ActionLink("Oradores", "Oradores", "Evento") %></li>
+                    <li><%= Html.ActionLink("Registo", "Index", "Registo") %></li>
+                    <li><%= Html.ActionLink("Local", "Local", "Home") %></li>
+                </ul>
+            </div>
+            <div id="ContentArea">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+        <div id="admin_Header">
+            <div class="PageWidth">
+                <div id="SocialBanner">
+                    <a href="http://www.facebook.com/pages/Microsoft-Webday-2010/110948092297050">
+                        <img src="<%= Url.Content("~/Public/images/facebook.tif") %>" alt="" /></a> <a href="http://twitter.com/Webday2010">
+                            <img src="<%= Url.Content("~/Public/images/twitter.jpg") %>" alt="" /></a>
+                </div>
+                <div id="admin_Logo">
+                    <a href="/homepage"><span></span></a>
+                </div>
+                <div id="admin_NavAux">
+                    <div id="Register">
+                        <a href="/account/register"><span></span></a>
+                    </div>
+                    <div id="Login">
+                        <a href="/account/logon"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Footer">
+            <div class="PageWidth">
+                <div id="Partners">
+                    <img src="<%= Url.Content("~/Public/images/flag.logo.png") %>" alt="" /></div>
+                <div id="Logos">
+                    <div class="logo">
+                        <img src="<%= Url.Content("~/Public/images/silverlight.logo.png") %>" alt="" /></div>
+                    <div class="logo">
+                        <img src="<%= Url.Content("~/Public/images/azure.logo.png") %>" alt="" /></div>
+                    <div class="logo">
+                        <img src="<%= Url.Content("~/Public/images/expression.logo.png") %>" alt="" /></div>
+                    <div class="logo">
+                        <img src="<%= Url.Content("~/Public/images/vs.logo.png") %>" alt="" /></div>
+                    <div class="logo">
+                        <img src="<%= Url.Content("~/Public/images/aspnet.logo.png") %>" alt="" /></div>
+                    <div class="logo">
+                        <img src="<%= Url.Content("~/Public/images/sp2010.logo.png") %>" alt="" /></div>
+                    <div class="logo">
+                        <img src="<%= Url.Content("~/Public/images/WP_Brd_Blu_h_cLr_r.png") %>" alt="" width="171" height="30" /></div>
+                    <div class="logo">
+                        <img src="<%= Url.Content("~/Public/images/ie9.logo.png") %>" alt="" /></div>
+                </div>
+                <div class="copyright">
+                    &copy; 2010 Microsoft | <a href="mailto:webday2010@hotmail.com">webday2010@hotmail.com</a></div>
+            </div>
+        </div>
+    <!--[if IE]><script type="text/javascript" src="/content/scripts/excanvas.compiled.js"></script><![endif]-->
+</body>
+</html>

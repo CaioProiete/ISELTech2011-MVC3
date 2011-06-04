@@ -1,0 +1,27 @@
+﻿@model IEnumerable<D03.AspxWebDay.Models.Orador>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Oradores";
+}
+
+<h1>Oradores (Razor!)</h1>
+    
+<div id="SpeakersList">
+
+    @foreach (var orador in ViewData.Model) {
+
+    <div class="Speaker">
+        <a class="Photo">
+            <img src="@Url.Content(orador.Foto)" class="Photo" alt="" />
+        </a>
+        <h2 class="SpeakerName">@orador.Nome</h2>
+        <p class="SpeakerTitle">@orador.Titulo</p>
+            
+    </div>
+
+    }
+        
+    <div class="clear">
+    </div>
+</div>
